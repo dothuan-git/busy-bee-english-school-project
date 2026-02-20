@@ -1,26 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1f1c14;
+  --brand: #fab900;
+  --brand-dark: #f1b300;
+  --text-main: #1f1c14;
+  --text-secondary: rgba(31, 28, 20, 0.7);
+  --dark-bg: #211903;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-midnightblue: #0a033c;
+  --color-gray-100: #1f1c14;
+  --color-gray-200: #211903;
+  --color-gray-300: rgba(255, 255, 255, 0.1);
+  --color-gray-400: rgba(31, 28, 20, 0.7);
+  --color-orange: #fab900;
+  --color-goldenrod: #f1b300;
+  --color-sandybrown: #f2994a;
+  --color-whitesmoke: #f9f9f9;
+  --color-gold: #ffc619;
+  --color-mediumpurple: #918cff;
+  --font-sans: 'Nunito', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out;
 }

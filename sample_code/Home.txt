@@ -1,0 +1,177 @@
+import type { NextPage } from 'next';
+import Image from "next/image";
+
+
+
+const Home: NextPage = () => {
+  	return (
+    		<div className="w-full h-[3468px] relative bg-whitesmoke overflow-hidden text-left text-[48px] text-gray-100 font-nunito">
+      			<div className="absolute top-[206px] left-[57px] w-[614.2px] h-[394.5px]">
+        				<div className="absolute top-[56.51px] left-[24.16px] w-[590px] h-[338px]">
+          					<div className="absolute top-[11px] left-[8px] [filter:blur(300px)] rounded-[50%] bg-sandybrown w-[582px] h-[159px] opacity-[0.4]" />
+          					<div className="absolute top-[0px] left-[0px] flex flex-col items-start gap-14">
+            						<div className="flex flex-col items-start gap-4">
+              							<div className="relative leading-[130%]">
+                								<span className="font-semibold">Kết nối tri thức <br/></span>
+                  									<span className="font-extrabold">Mở cánh cửa tương lai</span>
+                  									</div>
+                  									<div className="w-[574px] h-[72px] relative text-num-16 leading-[150%] inline-block shrink-0">Busy Bee English mang đến môi trường học tiếng Anh chất lượng cho thiếu nhi và luyện thi IELTS, giúp học viên xây dựng nền tảng vững chắc, tự tin chinh phục tri thức và tương lai.</div>
+                  									</div>
+                  									<div className="w-[172px] h-[70px] shadow-[0px_4px_20px_rgba(255,_221,_40,_0.2)] rounded-2xl bg-orange overflow-hidden shrink-0 flex items-center justify-center py-0 px-4 box-border text-center text-num-24">
+                    										<div className="flex-1 relative tracking-[0.01em] leading-[150%] font-semibold">Bắt đầu!</div>
+                  									</div>
+                  									</div>
+                  									</div>
+                  									<div className="absolute top-[24.33px] left-[0px] w-[49.4px] h-[49.4px] overflow-hidden [transform:_rotate(-29.5deg)] [transform-origin:0_0]" />
+                  									</div>
+                  									<Image className="absolute h-[0.15%] w-[0.49%] top-[5.24%] right-[9.51%] bottom-[94.61%] left-[90%] max-w-full overflow-hidden max-h-full" width={7} height={5.1} sizes="100vw" alt="" />
+                  									<div className="absolute top-[782px] left-[calc(50%_-_445px)] flex flex-col items-center gap-10 text-center text-midnightblue">
+                    										<div className="flex flex-col items-center gap-4">
+                      											<div className="relative leading-[55px] font-extrabold">Chương trình học</div>
+                      											<div className="w-[890px] h-[71px] relative text-num-24 leading-[150%] text-gray-400 whitespace-pre-wrap inline-block shrink-0">Chương trình đào tạo bao gồm 3 chương trình chính: chương trình cho trẻ từ  4–6 tuổi, chương trình cho thiếu nhi từ 6–10 tuổi và chương trình luyện thi IELTS.</div>
+                    										</div>
+                    										<div className="flex items-start gap-9 text-left text-num-24 text-gray-100">
+                      											<div className="w-[260px] shadow-[0px_10px_25px_rgba(56,_56,_56,_0.03)] rounded-2xl bg-white overflow-hidden shrink-0 flex flex-col items-start py-5 px-8 box-border">
+                        												<div className="flex items-center gap-5">
+                          													<Image className="h-[61px] w-[61px] relative rounded-num-20" width={61} height={61} sizes="100vw" alt="" />
+                          													<div className="relative leading-[140%] font-semibold">4-6 tuổi</div>
+                        												</div>
+                      											</div>
+                      											<div className="w-[260px] shadow-[0px_10px_25px_rgba(56,_56,_56,_0.03)] rounded-2xl bg-white overflow-hidden shrink-0 flex flex-col items-start py-5 px-8 box-border">
+                        												<div className="flex items-center gap-5">
+                          													<Image className="h-[61px] w-[61px] relative rounded-num-20" width={61} height={61} sizes="100vw" alt="" />
+                          													<div className="relative leading-[140%] font-semibold">6-10 tuổi</div>
+                        												</div>
+                      											</div>
+                      											<div className="w-[260px] shadow-[0px_10px_25px_rgba(56,_56,_56,_0.03)] rounded-2xl bg-white overflow-hidden shrink-0 flex flex-col items-start py-5 px-8 box-border">
+                        												<div className="flex items-center gap-5">
+                          													<Image className="h-[61px] w-[61px] relative rounded-num-20" width={61} height={61} sizes="100vw" alt="" />
+                          													<div className="relative leading-[140%] font-semibold">IELTS</div>
+                        												</div>
+                      											</div>
+                    										</div>
+                  									</div>
+                  									<div className="absolute top-[2749px] left-[79px] w-[1280px] h-[331px] text-center text-[36px] text-white">
+                    										<div className="absolute top-[0px] left-[0px] rounded-num-20 bg-gray-200 w-[1280px] h-[331px]" />
+                    										<div className="absolute top-[64px] left-[385px] flex flex-col items-center gap-8">
+                      											<div className="flex flex-col items-center gap-4">
+                        												<div className="relative leading-[130%] font-semibold">Bạn còn thắc mắc gì không?</div>
+                          													<div className="self-stretch relative text-num-16 leading-[150%] opacity-[0.8]">Đừng ngần ngại để lại số điện thoại của bạn. <br/>Chúng tôi sẽ liên hệ để giải đáp mọi thắc mắc của bạn.</div>
+                          													</div>
+                          													<div className="w-[509px] h-num-60 relative text-right text-num-16 font-inter">
+                            														<div className="absolute top-[0px] left-[367px] w-[142px] h-num-60">
+                              															<div className="absolute top-[0px] left-[0px] rounded-tl-none rounded-tr-[10px] rounded-br-[10px] rounded-bl-none bg-goldenrod w-[142px] h-num-60" />
+                              															<div className="absolute top-[21px] left-[47px] font-medium">Đăng ký</div>
+                            														</div>
+                            														<div className="absolute top-[0px] left-[0px] w-[367px] h-num-60 text-left font-nunito">
+                              															<div className="absolute top-[0px] left-[0px] rounded-tl-[10px] rounded-tr-none rounded-br-none rounded-bl-[10px] bg-gray-300 w-[367px] h-num-60" />
+                              															<div className="absolute top-[15px] left-[20px] leading-[30px]">Số điện thoại của bạn</div>
+                            														</div>
+                          													</div>
+                          													</div>
+                          													<Image className="absolute top-[30px] left-[94.15px] w-[1091.7px] h-[272px] object-cover" width={1091.7} height={272} sizes="100vw" alt="" />
+                          													</div>
+                          													<div className="absolute top-[1952px] left-[0px] flex flex-col items-center gap-[60px] text-center">
+                            														<div className="relative leading-[55px] font-extrabold">Tại sao nên lựa chọn Busy Bee?</div>
+                              															<div className="w-[1440px] h-[606px] relative text-[28px]">
+                                																<div className="absolute top-[269px] left-[0px] bg-orange w-[1440px] h-[337px]" />
+                                																<div className="absolute top-[0px] left-[80px] shadow-[0px_50px_80px_rgba(0,_0,_0,_0.05)] rounded-[30px] bg-white w-[400px] h-[517px] overflow-hidden">
+                                  																	<div className="absolute top-[240px] left-[calc(50%_-_161px)] w-[322px] flex flex-col items-center gap-3">
+                                    																		<b className="self-stretch h-20 relative leading-[150%] inline-block shrink-0">Đội ngũ giáo viên chuyên môn và tận tâm</b>
+                                    																		<div className="self-stretch relative text-[20px] leading-[150%] text-gray-400">Giáo viên có kinh nghiệm giảng dạy tiếng Anh thiếu nhi và luyện thi IELTS, luôn đồng hành và hỗ trợ học viên trong suốt quá trình học tập.</div>
+                                  																	</div>
+                                  																	<Image className="absolute top-[0px] left-[24px] w-[353px] h-[182px] object-cover" width={353} height={182} sizes="100vw" alt="" />
+                                																</div>
+                                																<div className="absolute top-[0px] left-[520px] shadow-[0px_50px_80px_rgba(0,_0,_0,_0.05)] rounded-[30px] bg-white w-[400px] h-[517px] overflow-hidden">
+                                  																	<div className="absolute top-[240px] left-[calc(50%_-_174px)] flex flex-col items-center gap-3">
+                                    																		<b className="w-[340px] relative leading-[150%] inline-block">Chương trình học bài bản, phù hợp từng độ tuổi</b>
+                                    																		<div className="w-[348px] relative text-[20px] leading-[150%] text-gray-400 inline-block">Lộ trình học được xây dựng khoa học, giúp học viên phát triển nền tảng tiếng Anh vững chắc và nâng cao kỹ năng giao tiếp theo từng giai đoạn.</div>
+                                  																	</div>
+                                  																	<Image className="absolute w-[80.75%] top-[17px] right-[7.5%] left-[11.75%] max-w-full overflow-hidden h-[187px] object-cover" width={323} height={187} sizes="100vw" alt="" />
+                                																</div>
+                                																<div className="absolute top-[0px] left-[960px] shadow-[0px_50px_80px_rgba(0,_0,_0,_0.05)] rounded-[30px] bg-white w-[400px] h-[517px] overflow-hidden">
+                                  																	<div className="absolute top-[240px] left-[calc(50%_-_168px)] w-[337px] flex flex-col items-center gap-3">
+                                    																		<b className="relative leading-[150%]">Học phí hợp lý, phù hợp<br/>với gia đình</b>
+                                      																			<div className="self-stretch relative text-[20px] leading-[150%] text-gray-400">Busy Bee English mang đến chương trình học chất lượng với mức học phí hợp lý, giúp nhiều học viên có cơ hội tiếp cận môi trường học tiếng Anh hiệu quả.</div>
+                                      																			</div>
+                                      																			<div className="absolute h-[2.22%] w-[25.75%] top-[36.51%] right-[39.25%] bottom-[61.26%] left-[35%] [filter:blur(4px)] rounded-[50%] bg-darkslategray" />
+                                      																			<Image className="absolute top-[17px] left-[34px] w-[335px] h-[174px] object-cover" width={335} height={174} sizes="100vw" alt="" />
+                                      																			</div>
+                                      																			</div>
+                                      																			</div>
+                                      																			<div className="absolute top-[1140px] left-[0px] bg-white w-[1440px] h-[736px] overflow-hidden">
+                                        																				<div className="absolute top-[calc(50%_-_364.24px)] left-[calc(50%_-_678.79px)] flex items-center gap-10">
+                                          																					<Image className="h-[729px] w-[747px] relative object-cover" width={747} height={729} sizes="100vw" alt="" />
+                                          																					<div className="h-[437px] flex flex-col items-start gap-[41px]">
+                                            																						<div className="w-[571px] h-[178px] relative leading-[130%] font-extrabold inline-block shrink-0">Hành trình học tại <br/>Busy Bee giúp con bạn phát triển như thế nào?</div>
+                                              																							<div className="h-[171px] flex flex-col items-start gap-6 text-num-24">
+                                                																								<div className="flex items-center gap-4 shrink-0">
+                                                  																									<div className="h-7 w-7 relative bg-white">
+                                                    																										<div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-num-20 bg-mediumpurple" />
+                                                    																										<Image className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] w-5 h-5" width={20} height={20} sizes="100vw" alt="" />
+                                                  																									</div>
+                                                  																									<div className="relative leading-[140%] font-medium">Trải nghiệm học tập sinh động, tương tác cao</div>
+                                                																								</div>
+                                                																								<div className="flex items-center gap-4 shrink-0">
+                                                  																									<div className="h-7 w-7 relative bg-white">
+                                                    																										<div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-num-20 bg-mediumpurple" />
+                                                    																										<Image className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] w-5 h-5" width={20} height={20} sizes="100vw" alt="" />
+                                                  																									</div>
+                                                  																									<div className="w-[487px] relative leading-[140%] font-medium inline-block shrink-0">Được quan tâm và theo sát trong lớp học quy mô nhỏ</div>
+                                                																								</div>
+                                                																								<div className="w-[531px] h-[68px] relative shrink-0">
+                                                  																									<div className="absolute top-[6.24px] left-[0px] bg-white w-7 h-7">
+                                                    																										<div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-num-20 bg-mediumpurple" />
+                                                    																										<Image className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] w-5 h-5" width={20} height={20} sizes="100vw" alt="" />
+                                                  																									</div>
+                                                  																									<div className="absolute top-[0.24px] left-[43.57px] leading-[140%] font-medium inline-block w-[487px] h-[59px]">Chuẩn bị tốt cho các mục tiêu học tập trong tương lai, bao gồm IELTS</div>
+                                                																								</div>
+                                              																							</div>
+                                            																						</div>
+                                          																					</div>
+                                        																				</div>
+                                        																				<div className="absolute bottom-[0px] left-[0px] bg-white w-[1438px] overflow-hidden flex flex-col items-start p-20 box-border text-num-16">
+                                          																					<div className="w-[1278px] h-[151px] relative">
+                                            																						<div className="absolute top-[8px] left-[842.43px] w-[151.7px] h-[143px]">
+                                              																							<div className="absolute top-[119px] left-[0px] leading-[150%] inline-block w-[112.7px]">Luyện thi IELTS</div>
+                                              																							<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[151.7px]">Thiếu nhi (6-10 tuổi)</div>
+                                              																							<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[141.4px]">Thiếu nhi (4-6 tuổi)</div>
+                                              																							<div className="absolute top-[0px] left-[0px] text-num-24 leading-[150%] font-semibold font-inter inline-block w-[100.4px]">Courses</div>
+                                            																						</div>
+                                            																						<div className="absolute top-[8px] left-[1182.69px] w-[95.3px] h-[107px]">
+                                              																							<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[53.3px]">Liên hệ</div>
+                                              																							<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[87.1px]">Tuyển dụng</div>
+                                              																							<div className="absolute top-[0px] left-[0px] text-num-24 leading-[150%] font-semibold font-inter inline-block w-[95.3px]">Contact</div>
+                                            																						</div>
+                                            																						<div className="absolute top-[0px] left-[0px] w-[267.5px] h-[151px]">
+                                              																							<div className="absolute top-[103px] left-[0px] leading-[150%] inline-block w-[267.5px]">Busy Bee is a registered<br/>trademark of busybee.english</div>
+                                                																								<div className="absolute top-[69px] left-[0px] leading-[150%] inline-block w-[199.8px]">©2026 busybee.english</div>
+                                                																								<div className="absolute h-[14.57%] w-[35.63%] top-[0%] right-[64.37%] bottom-[85.43%] left-[0%]">
+                                                  																									<Image className="absolute h-full w-[23.61%] top-[0%] right-[76.39%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full" width={22.5} height={22} sizes="100vw" alt="" />
+                                                  																									<Image className="absolute h-[84.55%] w-[23.61%] top-[9.09%] right-[0.04%] bottom-[6.36%] left-[76.35%] max-w-full overflow-hidden max-h-full" width={22.5} height={18.6} sizes="100vw" alt="" />
+                                                  																									<Image className="absolute h-4/5 w-[23.61%] top-[9.09%] right-[39.83%] bottom-[10.91%] left-[36.56%] max-w-full overflow-hidden max-h-full" width={22.5} height={17.6} sizes="100vw" alt="" />
+                                                																								</div>
+                                                																								<div className="absolute top-[18px] left-[0px] w-[44.9px] h-[43.8px] flex items-center" />
+                                              																							</div>
+                                            																						</div>
+                                          																					</div>
+                                          																					<div className="absolute top-[0px] left-[0px] bg-white w-[1440px] h-[110px] overflow-hidden text-[20px] text-midnightblue">
+                                            																						<div className="absolute top-[calc(50%_-_28px)] left-[calc(50%_-_644px)] w-[1288px] h-14">
+                                              																							<div className="absolute h-[48.21%] w-[48.76%] top-[26.79%] right-[0%] bottom-[25%] left-[51.24%] flex items-start gap-14 shrink-0">
+                                                																								<div className="relative font-medium">Trang chủ</div>
+                                                																								<div className="flex items-center gap-2">
+                                                  																									<div className="relative font-medium">Chương trình học</div>
+                                                  																									<Image className="h-6 w-6 relative" width={24} height={24} sizes="100vw" alt="" />
+                                                																								</div>
+                                                																								<div className="relative font-medium text-gray-100">Tuyển dụng</div>
+                                                																								<div className="relative font-medium text-gray-100">Liên hệ</div>
+                                              																							</div>
+                                              																							<Image className="absolute w-[22.05%] top-[-18px] right-[77.64%] left-[0.31%] max-w-full overflow-hidden h-[93px] object-cover shrink-0" width={284} height={93} sizes="100vw" alt="" />
+                                            																						</div>
+                                          																					</div>
+                                          																					<Image className="absolute top-[173px] left-[796px] w-[596px] h-[533px] object-cover" width={596} height={533} sizes="100vw" alt="" />
+                                        																				</div>);
+                                        																				};
+                                        																				
+                                        																				export default Home ;
+                                        																				

@@ -1,0 +1,175 @@
+import type { NextPage } from 'next';
+import Image from "next/image";
+
+
+
+const Course: NextPage = () => {
+  	return (
+    		<div className="w-full h-[2720px] relative bg-whitesmoke overflow-hidden text-left text-num-14 text-gray-100 font-nunito">
+      			<div className="absolute top-[150px] left-[80px] flex flex-col items-start text-num-20">
+        				<div className="w-[1280px] flex items-center">
+          					<b className="flex-1 relative leading-[150%]">Các khoá học</b>
+        				</div>
+      			</div>
+      			<div className="absolute top-[404px] left-[78px] w-[1284px] flex flex-col items-end gap-8 text-num-16">
+        				<div className="self-stretch h-[313px] rounded-2xl bg-white overflow-hidden shrink-0 flex flex-col items-start py-8 px-9 box-border">
+          					<div className="flex flex-col items-start shrink-0">
+            						<div className="flex items-start gap-12">
+              							<Image className="h-[254px] w-[512px] relative object-cover" width={512} height={254} sizes="100vw" alt="" />
+              							<div className="flex flex-col items-start">
+                								<div className="flex flex-col items-start gap-4">
+                  									<b className="relative text-num-20 leading-[150%]">Tiếng anh thiếu nhi (4-6 tuổi):</b>
+                  									<div className="flex items-center">
+                    										<div className="flex items-center gap-1">
+                      											<div className="relative leading-[150%]">Lộ trình học:</div>
+                      											<b className="relative leading-[150%]">3 cấp độ</b>
+                    										</div>
+                  									</div>
+                  									<div className="flex items-center gap-1">
+                    										<div className="relative leading-[150%]">{`Mỗi cấp độ: `}</div>
+                    										<b className="relative leading-[150%]">32 buổi</b>
+                  									</div>
+                  									<div className="flex items-center gap-1">
+                    										<div className="relative leading-[150%]">{`Thời lượng: `}</div>
+                    										<b className="relative leading-[150%] text-black">3 buổi/tuần</b>
+                  									</div>
+                  									<div className="flex items-center gap-1">
+                    										<div className="relative leading-[150%]">{`Thời gian: `}</div>
+                    										<b className="relative leading-[150%]">90 phút/buổi</b>
+                  									</div>
+                  									<div className="flex items-center gap-1 text-num-20">
+                    										<div className="relative leading-[150%]">{`Học phí: `}</div>
+                    										<b className="relative leading-[150%]">900.000VNĐ/tháng</b>
+                  									</div>
+                								</div>
+              							</div>
+            						</div>
+          					</div>
+        				</div>
+        				<div className="flex flex-col items-start gap-6 text-num-20">
+          					<div className="flex flex-col items-start gap-3">
+            						<b className="relative leading-[150%]">Giáo trình và phương pháp học</b>
+            						<div className="w-[1284px] relative text-num-14 leading-[150%] inline-block">
+              							<ul className="m-0 font-inherit text-[length:inherit] pl-[19px]">
+                								<li className="mb-0">{`Giáo trình PIPPA AND POP 1,2,3 - Nhà Xuất Bản Caroline Nixon & Michael Tomlinson.`}</li>
+                								<li>Phương pháp học thông qua hoạt động nghe - nói, trò chơi và vận động phù hợp lứa tuổi trong môi trường học tập thân thiện, an toàn  giúp trẻ làm quen với tiếng Anh một cách tự nhiên.</li>
+              							</ul>
+            						</div>
+          					</div>
+          					<div className="flex flex-col items-start gap-3">
+            						<b className="relative leading-[150%]">Nội dung khoá học</b>
+            						<div className="w-[1284px] relative text-num-14 leading-[150%] inline-block">
+              							<ul className="m-0 font-inherit text-[length:inherit] pl-[19px]">
+                								<li className="mb-0">Trau dồi và cải thiện vốn từ vựng Tiếng Anh.</li>
+                								<li className="mb-0">Nâng cao toàn diện 4 kỹ năng (Nghe, Nói, Đọc, Viết) Tiếng Anh khi có lượng từ vựng tốt.</li>
+                								<li className="mb-0">Tăng cường công suất sử dụng cả hai bán cầu não trong việc ghi nhớ để đảm bảo học viên có thể nhớ từ vựng tốt hơn.</li>
+                								<li>Kích thích trí tưởng tượng và óc sáng tạo của cá nhân mỗi học viên.</li>
+              							</ul>
+            						</div>
+          					</div>
+          					<div className="flex flex-col items-start gap-3">
+            						<b className="relative leading-[150%]">Môi trường học tập</b>
+            						<div className="w-[1284px] relative text-num-14 leading-[150%] inline-block">
+              							<ul className="m-0 font-inherit text-[length:inherit] pl-[19px]">
+                								<li className="mb-0">Lớp học ít (5-10 học viên/lớp).</li>
+                								<li>Giáo viên chính + trợ giảng hỗ trợ cá nhân hoá từng học viên.</li>
+              							</ul>
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div className="absolute top-[2007px] left-[76px] w-[1280px] h-[331px] text-center text-[36px] text-white">
+        				<div className="absolute top-[0px] left-[0px] rounded-[20px] bg-gray-200 w-[1280px] h-[331px]" />
+        				<div className="absolute top-[64px] left-[385px] flex flex-col items-center gap-8">
+          					<div className="flex flex-col items-center gap-4">
+            						<div className="relative leading-[130%] font-semibold">Bạn còn thắc mắc gì không?</div>
+              							<div className="self-stretch relative text-num-16 leading-[150%] opacity-[0.8]">Đừng ngần ngại để lại số điện thoại của bạn. <br/>Chúng tôi sẽ liên hệ để giải đáp mọi thắc mắc của bạn.</div>
+              							</div>
+              							<div className="w-[509px] h-num-60 relative text-right text-num-16 font-inter">
+                								<div className="absolute top-[0px] left-[367px] w-[142px] h-num-60">
+                  									<div className="absolute top-[0px] left-[0px] rounded-tl-none rounded-tr-[10px] rounded-br-[10px] rounded-bl-none bg-goldenrod w-[142px] h-num-60" />
+                  									<div className="absolute top-[21px] left-[47px] font-medium">Đăng ký</div>
+                								</div>
+                								<div className="absolute top-[0px] left-[0px] w-[367px] h-num-60 text-left font-nunito">
+                  									<div className="absolute top-[0px] left-[0px] rounded-tl-[10px] rounded-tr-none rounded-br-none rounded-bl-[10px] bg-gray-400 w-[367px] h-num-60" />
+                  									<div className="absolute top-[15px] left-[20px] leading-[30px]">Số điện thoại của bạn</div>
+                								</div>
+              							</div>
+              							</div>
+              							<Image className="absolute top-[30px] left-[94.15px] w-[1091.7px] h-[272px] object-cover" width={1091.7} height={272} sizes="100vw" alt="" />
+              							</div>
+              							<div className="absolute top-[196px] left-[80px] rounded-num-8 bg-gold w-[400px] overflow-hidden flex items-start p-3 box-border gap-4">
+                								<Image className="h-24 w-24 relative rounded-num-8 object-cover" width={96} height={96} sizes="100vw" alt="" />
+                								<div className="flex flex-col items-start gap-1">
+                  									<b className="w-[167px] h-[41px] relative tracking-[0.39px] leading-[140%] inline-block shrink-0">Tiếng anh thiếu nhi <br/>(4-6 tuổi)</b>
+                    										<div className="w-[258px] relative text-[10px] leading-[160%] text-gray-300 inline-block">Giáo trình PIPPA AND POP 1,2,3<br/>Phương pháp học thông qua hoạt động nghe - nói, trò chơi và vận động phù hợp lứa tuổi.</div>
+                      											<div className="w-num-191 h-num-17 relative text-white font-inter">
+                        												<b className="absolute top-[0px] left-[0px] leading-[150%] inline-block w-num-191 h-num-17">900.000VNĐ/tháng</b>
+                      											</div>
+                    										</div>
+                    										</div>
+                    										<div className="absolute top-[196px] left-[520px] rounded-num-8 bg-white w-[400px] overflow-hidden flex items-start p-3 box-border gap-4">
+                      											<Image className="h-24 w-24 relative rounded-num-8 object-cover" width={96} height={96} sizes="100vw" alt="" />
+                      											<div className="flex flex-col items-start gap-1">
+                        												<b className="w-[167px] h-[41px] relative tracking-[0.39px] leading-[140%] inline-block shrink-0">Tiếng anh thiếu nhi (6-10 tuổi)</b>
+                        												<div className="w-[258px] relative text-[10px] leading-[160%] text-gray-300 inline-block">Giáo trình FAMILY AND FRIENDS 2nd EDITION <br/>Phương pháp học chú trọng học qua thực hành, tương tác và hướng dẫn từng bước.</div>
+                          													<div className="w-num-191 h-num-17 relative text-gold font-inter">
+                            														<b className="absolute top-[0px] left-[0px] leading-[150%] inline-block w-num-191 h-num-17">900.000VNĐ/tháng</b>
+                          													</div>
+                        												</div>
+                      											</div>
+                      											<div className="absolute top-[196px] left-[960px] rounded-num-8 bg-white w-[400px] overflow-hidden flex items-start p-3 box-border gap-4">
+                        												<Image className="h-24 w-24 relative rounded-num-8 object-cover" width={96} height={96} sizes="100vw" alt="" />
+                        												<div className="flex flex-col items-start gap-1">
+                          													<b className="w-[167px] h-[41px] relative tracking-[0.39px] leading-[140%] inline-block shrink-0">Luyện thi chứng chỉ IELTS</b>
+                          													<div className="w-[258px] relative text-[10px] leading-[160%] text-gray-300 inline-block">Giáo trình MINDSET FOR IELTS (FOUNDATION - 3)<br/>Phương pháp học tập trung xây dựng nền tảng kỹ năng vững chắc.</div>
+                            														<div className="w-num-191 h-num-17 relative text-gold font-inter">
+                              															<b className="absolute top-[0px] left-[0px] leading-[150%] inline-block w-num-191 h-num-17">1.500.000VNĐ/tháng</b>
+                            														</div>
+                          													</div>
+                        												</div>
+                        												<Image className="absolute top-[1182px] left-[153px] w-[1132px] h-[755px] object-cover" width={1132} height={755} sizes="100vw" alt="" />
+                        												<div className="absolute bottom-[0px] left-[2px] bg-white w-[1438px] overflow-hidden flex flex-col items-start pt-[84px] px-20 pb-20 box-border text-num-16">
+                          													<div className="w-[1278px] h-[151px] relative">
+                            														<div className="absolute top-[8px] left-[842.43px] w-[151.7px] h-[143px]">
+                              															<div className="absolute top-[119px] left-[0px] leading-[150%] inline-block w-[112.7px]">Luyện thi IELTS</div>
+                              															<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[151.7px]">Thiếu nhi (6-10 tuổi)</div>
+                              															<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[141.4px]">Thiếu nhi (4-6 tuổi)</div>
+                              															<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[100.4px]">Courses</div>
+                            														</div>
+                            														<div className="absolute top-[8px] left-[1182.69px] w-[95.3px] h-[107px]">
+                              															<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[53.3px]">Liên hệ</div>
+                              															<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[87.1px]">Tuyển dụng</div>
+                              															<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[95.3px]">Contact</div>
+                            														</div>
+                            														<div className="absolute top-[0px] left-[0px] w-[267.5px] h-[151px]">
+                              															<div className="absolute top-[103px] left-[0px] leading-[150%] inline-block w-[267.5px]">Busy Bee is a registered<br/>trademark of busybee.english</div>
+                                																<div className="absolute top-[69px] left-[0px] leading-[150%] inline-block w-[199.8px]">©2026 busybee.english</div>
+                                																<div className="absolute h-[14.57%] w-[35.63%] top-[0%] right-[64.37%] bottom-[85.43%] left-[0%]">
+                                  																	<Image className="absolute h-full w-[23.61%] top-[0%] right-[76.39%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full" width={22.5} height={22} sizes="100vw" alt="" />
+                                  																	<Image className="absolute h-[84.55%] w-[23.61%] top-[9.09%] right-[0.04%] bottom-[6.36%] left-[76.35%] max-w-full overflow-hidden max-h-full" width={22.5} height={18.6} sizes="100vw" alt="" />
+                                  																	<Image className="absolute h-4/5 w-[23.61%] top-[9.09%] right-[39.83%] bottom-[10.91%] left-[36.56%] max-w-full overflow-hidden max-h-full" width={22.5} height={17.6} sizes="100vw" alt="" />
+                                																</div>
+                                																<div className="absolute top-[18px] left-[0px] w-[44.9px] h-[43.8px] flex items-center" />
+                              															</div>
+                            														</div>
+                          													</div>
+                          													<div className="absolute top-[0px] left-[0px] bg-white w-[1440px] h-[110px] overflow-hidden text-num-20 text-midnightblue">
+                            														<div className="absolute top-[calc(50%_-_28px)] left-[calc(50%_-_644px)] w-[1288px] h-14">
+                              															<div className="absolute h-[48.21%] w-[48.76%] top-[26.79%] right-[0%] bottom-[25%] left-[51.24%] flex items-start gap-14 shrink-0">
+                                																<div className="relative font-medium">Trang chủ</div>
+                                																<div className="flex items-center gap-2">
+                                  																	<div className="relative font-medium">Chương trình học</div>
+                                  																	<Image className="h-6 w-6 relative" width={24} height={24} sizes="100vw" alt="" />
+                                																</div>
+                                																<div className="relative font-medium text-gray-100">Tuyển dụng</div>
+                                																<div className="relative font-medium text-gray-100">Liên hệ</div>
+                              															</div>
+                              															<Image className="absolute w-[22.05%] top-[-18px] right-[77.64%] left-[0.31%] max-w-full overflow-hidden h-[93px] object-cover shrink-0" width={284} height={93} sizes="100vw" alt="" />
+                            														</div>
+                          													</div>
+                        												</div>);
+                        												};
+                        												
+                        												export default Course ;
+                        												

@@ -1,0 +1,190 @@
+.componentParent {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-family: Nunito;
+}
+
+.frameParent {
+  position: absolute;
+  top: calc(50% - 28px);
+  left: calc(50% - 644px);
+  width: 1288px;
+  height: 56px;
+}
+
+.bee1Parent {
+  position: absolute;
+  height: 85.71%;
+  width: 12.34%;
+  top: 8.93%;
+  right: 87.66%;
+  bottom: 5.36%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 32px;
+}
+
+.bee1Icon {
+  height: 48px;
+  width: 48px;
+  position: relative;
+}
+
+.edudu {
+  position: relative;
+  line-height: 150%;
+}
+
+.frameGroup {
+  position: absolute;
+  height: 48.21%;
+  width: 40.68%;
+  top: 26.79%;
+  right: 29.97%;
+  bottom: 25%;
+  left: 29.35%;
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  font-size: 20px;
+  color: #0a033c;
+}
+
+.courseParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course {
+  position: relative;
+  font-weight: 500;
+}
+
+.downArrow24Outline {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.aboutUs {
+  position: relative;
+  font-weight: 500;
+  color: #1f1c14;
+}
+
+.button {
+  position: absolute;
+  height: 100%;
+  width: 9.32%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 90.68%;
+  border-radius: 16px;
+  background-color: #362b0e;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+.button2 {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.signUp {
+  position: absolute;
+  top: 32.14%;
+  left: 84.08%;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: Inter;
+  color: #1f1c14;
+  text-align: center;
+}
+
+/* Mobile menu styles */
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileLink {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0a033c;
+  padding: 12px 0;
+}
+
+.mobileDivider {
+  margin: 8px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.mobileButtonLink {
+  display: block;
+  background-color: #362b0e;
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .frameParent {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 1288px;
+  }
+
+  .frameGroup,
+  .signUp,
+  .button {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    background: #fff;
+    border-top: 1px solid #eee;
+  }
+}
