@@ -1,0 +1,32 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  	"content": [
+    		"./pages/**/*.{js,ts,jsx,tsx}",
+    		"./components/**/*.{js,ts,jsx,tsx}"
+  	],
+  	"theme": {
+    		"extend": {
+      			"colors": {
+        				"whitesmoke": "#f9f9f9",
+        				"sandybrown": "#f2994a",
+        				"gray": "#1f1c14",
+        				"white": "#fff",
+        				"midnightblue": "#0a033c",
+        				"gold": "#ffc619",
+        				"black": "#000",
+        				"orange": "#fab900"
+      			},
+      			"fontFamily": {
+        				"nunito": "Nunito",
+        				"inter": "Inter"
+      			}
+    		},
+    		"fontSize": {
+      			"num-16": "16px",
+      			"num-20": "20px"
+    		}
+  	},
+  	"corePlugins": {
+    		"preflight": false
+  	}
+}

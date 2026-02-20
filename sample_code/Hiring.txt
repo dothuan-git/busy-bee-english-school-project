@@ -1,0 +1,70 @@
+import type { NextPage } from 'next';
+import Image from "next/image";
+
+
+
+const TuynDng: NextPage = () => {
+  	return (
+    		<div className="w-full h-[1254px] relative bg-whitesmoke overflow-hidden text-left text-[48px] text-gray font-nunito">
+      			<div className="absolute top-[663.51px] left-[703.12px] [filter:blur(300px)] rounded-[50%] bg-sandybrown w-[79.7px] h-[159px] opacity-[0.4]" />
+      			<div className="absolute top-[574px] left-[739px] w-[438px] h-[62px] flex flex-col items-start gap-4">
+        				<b className="relative leading-[130%] shrink-0">Tuyển dụng</b>
+        				<div className="w-[616px] h-[216px] relative text-num-16 leading-[150%] inline-block shrink-0">
+          					<span>{`Trung tâm ngoại ngữ `}</span>
+          					<span className="font-semibold">Con Ong Chăm Chỉ (Busy Bee English)</span>
+          					<span> được Sở Giáo Dục và Đào Tạo thành phố Hồ Chí Minh cấp phép thành lập vào ngày 28/7/2025. Busy Bee English là cơ sở đào tạo ngoại ngữ hoạt động theo quy định của pháp luật, chuyên tổ chức các khóa tiếng Anh thiếu nhi và luyện thi IELTS. Trung tâm hướng đến việc giúp học viên xây dựng nền tảng tiếng Anh vững chắc ngay từ sớm, phù hợp với từng độ tuổi và khả năng tiếp thu.<br/>Với quy mô lớp học phù hợp, Busy Bee English chú trọng việc theo sát từng học viên trong quá trình học tập, tạo môi trường học tập thân thiện, an toàn và phối hợp cùng phụ huynh để hỗ trợ kết quả học tập một cách hiệu quả.</span>
+            						</div>
+            						</div>
+            						<Image className="absolute top-[605px] left-[76px] w-[620px] h-[225px] object-cover" width={620} height={225} sizes="100vw" alt="" />
+            						<div className="absolute top-[0px] left-[0px] bg-white w-[1440px] h-[110px] overflow-hidden text-num-20 text-midnightblue">
+              							<div className="absolute top-[calc(50%_-_28px)] left-[calc(50%_-_644px)] w-[1288px] h-14">
+                								<div className="absolute h-[48.21%] w-[48.76%] top-[26.79%] right-[0%] bottom-[25%] left-[51.24%] flex items-start gap-14 shrink-0">
+                  									<div className="relative font-medium">Trang chủ</div>
+                  									<div className="flex items-center gap-2">
+                    										<div className="relative font-medium">Chương trình học</div>
+                    										<Image className="h-6 w-6 relative" width={24} height={24} sizes="100vw" alt="" />
+                  									</div>
+                  									<div className="relative font-medium text-gold">Tuyển dụng</div>
+                  									<div className="relative font-medium text-black">Liên hệ</div>
+                								</div>
+                								<Image className="absolute w-[22.05%] top-[-18px] right-[77.64%] left-[0.31%] max-w-full overflow-hidden h-[93px] object-cover shrink-0" width={284} height={93} sizes="100vw" alt="" />
+              							</div>
+            						</div>
+            						<Image className="absolute top-[179px] left-[80px] w-[1280px] h-[327px] object-cover" width={1280} height={327} sizes="100vw" alt="" />
+            						<div className="absolute top-[246px] left-[282px] flex flex-col items-start gap-3 text-[40px]">
+              							<b className="w-[512px] relative leading-[130%] inline-block">We are hiring</b>
+              							<div className="relative text-num-20 leading-[130%]">Promotion valid from May 1, 2023 - June 30, 2023</div>
+            						</div>
+            						<div className="absolute top-[372px] left-[282px] shadow-[0px_5px_40px_rgba(248,_208,_113,_0.3)] rounded-2xl bg-orange w-[245px] h-[66px] overflow-hidden flex items-center justify-center py-0 px-4 box-border text-center text-[24px]">
+              							<div className="flex-1 relative tracking-[0.01em] leading-[150%] font-semibold">Ứng tuyển ngay!</div>
+            						</div>
+            						<div className="absolute bottom-[0px] left-[2px] bg-white w-[1438px] overflow-hidden flex flex-col items-start pt-[84px] px-20 pb-20 box-border text-num-16">
+              							<div className="w-[1278px] h-[151px] relative">
+                								<div className="absolute top-[8px] left-[842.43px] w-[151.7px] h-[143px]">
+                  									<div className="absolute top-[119px] left-[0px] leading-[150%] inline-block w-[112.7px]">Luyện thi IELTS</div>
+                  									<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[151.7px]">Thiếu nhi (6-10 tuổi)</div>
+                  									<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[141.4px]">Thiếu nhi (4-6 tuổi)</div>
+                  									<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[100.4px]">Courses</div>
+                								</div>
+                								<div className="absolute top-[8px] left-[1182.69px] w-[95.3px] h-[107px]">
+                  									<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[53.3px]">Liên hệ</div>
+                  									<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[87.1px]">Tuyển dụng</div>
+                  									<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[95.3px]">Contact</div>
+                								</div>
+                								<div className="absolute top-[0px] left-[0px] w-[267.5px] h-[151px]">
+                  									<div className="absolute top-[103px] left-[0px] leading-[150%] inline-block w-[267.5px]">Busy Bee is a registered<br/>trademark of busybee.english</div>
+                    										<div className="absolute top-[69px] left-[0px] leading-[150%] inline-block w-[199.8px]">©2026 busybee.english</div>
+                    										<div className="absolute h-[14.57%] w-[35.63%] top-[0%] right-[64.37%] bottom-[85.43%] left-[0%]">
+                      											<Image className="absolute h-full w-[23.61%] top-[0%] right-[76.39%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full" width={22.5} height={22} sizes="100vw" alt="" />
+                      											<Image className="absolute h-[84.55%] w-[23.61%] top-[9.09%] right-[0.04%] bottom-[6.36%] left-[76.35%] max-w-full overflow-hidden max-h-full" width={22.5} height={18.6} sizes="100vw" alt="" />
+                      											<Image className="absolute h-4/5 w-[23.61%] top-[9.09%] right-[39.83%] bottom-[10.91%] left-[36.56%] max-w-full overflow-hidden max-h-full" width={22.5} height={17.6} sizes="100vw" alt="" />
+                    										</div>
+                    										<div className="absolute top-[18px] left-[0px] w-[44.9px] h-[43.8px] flex items-center" />
+                  									</div>
+                								</div>
+              							</div>
+            						</div>);
+            						};
+            						
+            						export default TuynDng ;
+            						

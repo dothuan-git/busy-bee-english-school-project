@@ -55,9 +55,9 @@ export default function WhyChooseUs() {
           <div className="relative z-10 flex flex-col items-center justify-center gap-10 px-[80px] lg:flex-row">
             {features.map((feature, index) => (
               <FadeIn key={index} delay={index * 200} direction="up">
-                <div className="flex h-[517px] w-[400px] flex-col items-center overflow-hidden rounded-[30px] bg-white shadow-[0px_50px_80px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_60px_100px_rgba(0,0,0,0.1)]">
+                <div className="flex h-[517px] w-[400px] flex-col items-center justify-evenly overflow-hidden rounded-[30px] bg-white py-6 shadow-[0px_50px_80px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_60px_100px_rgba(0,0,0,0.1)]">
                   {/* Card Image */}
-                  <div className="flex w-full justify-center pt-[17px]">
+                  <div className="flex w-full justify-center pb-10">
                     <Image
                       src={feature.image}
                       alt={feature.title}
@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   {/* Content */}
-                  <div className="flex flex-col items-center gap-3 px-[39px] pt-[41px] text-center">
+                  <div className="flex flex-col items-center gap-3 px-[39px] text-center">
                     <h3 className="whitespace-pre-line text-[22px] font-bold leading-[1.5] text-gray-100">
                       {feature.title}
                     </h3>
