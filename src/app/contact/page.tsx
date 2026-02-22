@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Container from '@/components/ui/Container';
 import ContactForm from '@/components/sections/ContactForm';
 import logoWhite from '@/assets/common/logo_white.png';
+import contactImg from '@/assets/contact/contact_img.jpg';
 
 export const metadata: Metadata = {
   title: 'Liên hệ - Busy Bee English School',
@@ -17,29 +18,16 @@ export default function ContactPage() {
       <div className="pointer-events-none absolute left-[530px] top-[182px] h-[190px] w-[322px] rounded-full bg-sandybrown opacity-40 blur-[300px]" />
 
       {/* Introduction Section */}
-      <section className="pt-12 pb-16">
+      <section id="introduction" className="pt-12 pb-16">
         <Container>
           <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-14">
             {/* Image placeholder */}
             <div className="w-full flex-shrink-0 lg:w-[620px]">
-              <div className="flex h-[300px] items-center justify-center rounded-[25px] bg-gradient-to-br from-amber-100 to-orange/20 sm:h-[360px] lg:h-[413px]">
-                <div className="text-center text-gray-400">
-                  <svg
-                    className="mx-auto mb-2 h-16 w-16 text-orange/40"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <p className="text-sm text-gray-400">Hình ảnh trung tâm</p>
-                </div>
-              </div>
+              <Image
+                src={contactImg}
+                alt="Busy Bee English - Trung tâm ngoại ngữ"
+                className="h-[300px] w-full rounded-[25px] object-cover sm:h-[360px] lg:h-[413px]"
+              />
             </div>
 
             {/* About text */}
@@ -77,7 +65,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="pb-16">
+      <section id="contact-form" className="pb-16">
         <Container>
           <div className="overflow-hidden rounded-[20px] bg-gold px-6 py-10 sm:px-10 md:px-[70px] md:py-12">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[100px]">
