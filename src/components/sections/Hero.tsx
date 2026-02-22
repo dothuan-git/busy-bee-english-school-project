@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import heroGirl from '@/assets/home/Group 237654.png';
+import heroImg from '@/assets/home/home_hero.png';
 import FadeIn from '@/components/ui/FadeIn';
 
 export default function Hero() {
@@ -52,12 +52,12 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Hero Girl Image */}
+          {/* Right Content - Hero Image */}
           <FadeIn direction="right" delay={300}>
             <div className="relative">
               <Image
-                src={heroGirl}
-                alt="Học sinh vui vẻ đọc sách"
+                src={heroImg}
+                alt="Học sinh vui vẻ học tiếng Anh"
                 width={596}
                 height={533}
                 className="object-cover"

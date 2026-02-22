@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import benefitsImage from '@/assets/home/Group 12.png';
+import benefitsImage from '@/assets/home/home_hero_2.png';
 import FadeIn from '@/components/ui/FadeIn';
 
 const benefits = [
