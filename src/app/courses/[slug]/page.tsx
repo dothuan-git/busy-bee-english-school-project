@@ -51,7 +51,7 @@ export default function CourseDetailPage() {
   return (
     <div id="courses" className="bg-whitesmoke">
       {/* Title & Course Summary Cards */}
-      <div id="course-overview" className="mx-auto max-w-[1440px] px-20 pt-[60px]">
+      <div id="course-overview" className="mx-auto max-w-[calc(1288px+48px)] px-6 pt-12">
         <FadeIn>
           <h1 className="text-xl font-bold leading-[150%] text-gray-100">
             Các khoá học
@@ -103,7 +103,7 @@ export default function CourseDetailPage() {
       </div>
 
       {/* Course Detail */}
-      <div id="course-detail" className="mx-auto max-w-[1440px] px-[78px] pt-16">
+      <div id="course-detail" className="mx-auto max-w-[calc(1288px+48px)] px-6 pt-16">
         <div
           key={slug}
           className="animate-fade-in"
@@ -190,7 +190,7 @@ export default function CourseDetailPage() {
       </div>
 
       {/* Schedule */}
-      <div id="schedule" className="mx-auto max-w-[1440px] px-20 py-16">
+      <div id="schedule" className="mx-auto max-w-[calc(1288px+48px)] px-6 py-16">
         <FadeIn>
           <Image
             src={scheduleImages[slug]}

@@ -36,10 +36,10 @@ const features = [
 export default function WhyChooseUs() {
   return (
     <section id="why-choose-us" className="relative">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[calc(1288px+48px)] px-6">
         {/* Title */}
         <FadeIn>
-          <div className="py-[60px] text-center">
+          <div className="py-16 text-center">
             <h2 className="text-[36px] font-extrabold leading-[45px] text-gray-100">
               Tại sao nên lựa chọn Busy Bee?
             </h2>
@@ -47,12 +47,12 @@ export default function WhyChooseUs() {
         </FadeIn>
 
         {/* Cards with background */}
-        <div className="relative pb-[115px]">
+        <div className="relative pb-20">
           {/* Yellow background strip - breaks out of container to fill full width */}
           <div className="absolute bottom-0 left-1/2 h-[337px] w-screen -translate-x-1/2 bg-orange" />
 
           {/* Cards */}
-          <div className="relative z-10 flex flex-col items-center justify-center gap-10 px-[80px] lg:flex-row">
+          <div className="relative z-10 flex flex-col items-center justify-center gap-10 lg:flex-row">
             {features.map((feature, index) => (
               <FadeIn key={index} delay={index * 200} direction="up">
                 <div className="flex h-[517px] w-[400px] flex-col items-center justify-evenly overflow-hidden rounded-[30px] bg-white py-6 shadow-[0px_50px_80px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_60px_100px_rgba(0,0,0,0.1)]">

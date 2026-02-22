@@ -27,7 +27,7 @@ const programs = [
 
 export default function Subjects() {
   return (
-    <section id="subjects" className="relative flex w-full flex-col items-center gap-10 py-10 text-center text-[36px] text-midnightblue">
+    <section id="subjects" className="relative flex w-full flex-col items-center gap-10 py-16 text-center text-[36px] text-midnightblue">
       <FadeIn>
         <div className="flex flex-col items-center gap-4">
           <h2 className="relative font-extrabold leading-[55px]">

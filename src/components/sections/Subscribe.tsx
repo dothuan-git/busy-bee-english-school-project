@@ -23,7 +23,7 @@ export default function Subscribe() {
 
   return (
     <section id="subscribe" className="bg-white py-16">
-      <div className="mx-auto max-w-[1440px] px-20">
+      <div className="mx-auto max-w-[calc(1288px+48px)] px-6">
         <FadeIn>
           <div className="relative overflow-hidden rounded-[20px] bg-gray-200 px-6 py-16">
             {/* Decorative avatars */}

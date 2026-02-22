@@ -1,0 +1,44 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  	"content": [
+    		"./pages/**/*.{js,ts,jsx,tsx}",
+    		"./components/**/*.{js,ts,jsx,tsx}"
+  	],
+  	"theme": {
+    		"extend": {
+      			"colors": {
+        				"whitesmoke": "#f9f9f9",
+        				"gray": {
+          					"100": "#1f1c14",
+          					"200": "rgba(0, 0, 0, 0.7)",
+          					"300": "rgba(255, 255, 255, 0.3)"
+        				},
+        				"sandybrown": "#f2994a",
+        				"white": "#fff",
+        				"midnightblue": "#0a033c",
+        				"orange": {
+          					"100": "#fab900",
+          					"200": "#ffa200"
+        				},
+        				"gold": "#ffc619"
+      			},
+      			"spacing": {
+        				"num-473": "473px",
+        				"num-60": "60px"
+      			},
+      			"fontFamily": {
+        				"nunito": "Nunito",
+        				"inter": "Inter"
+      			},
+      			"borderRadius": {
+        				"num-10": "10px"
+      			}
+    		},
+    		"fontSize": {
+      			"num-16": "16px"
+    		}
+  	},
+  	"corePlugins": {
+    		"preflight": false
+  	}
+}

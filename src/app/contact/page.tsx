@@ -1,204 +1,142 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Container from '@/components/ui/Container';
-import Card from '@/components/ui/Card';
-import PageHeader from '@/components/sections/PageHeader';
 import ContactForm from '@/components/sections/ContactForm';
-import CTA from '@/components/sections/CTA';
+import logoWhite from '@/assets/common/logo_white.png';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Busy Bee English School',
+  title: 'Liên hệ - Busy Bee English School',
   description:
-    'Get in touch with Busy Bee English School. Schedule a free trial class or ask us any questions about our programs.',
+    'Liên hệ Trung tâm ngoại ngữ Con Ong Chăm Chỉ (Busy Bee English) để được tư vấn về các khóa học tiếng Anh thiếu nhi và luyện thi IELTS.',
 };
 
 export default function ContactPage() {
   return (
-    <div className="bg-white dark:bg-zinc-950">
-      <PageHeader
-        title="Contact Us"
-        subtitle="We'd love to hear from you! Reach out to learn more about our programs or schedule a visit."
-      />
+    <div className="relative bg-whitesmoke overflow-hidden">
+      {/* Decorative blur */}
+      <div className="pointer-events-none absolute left-[530px] top-[182px] h-[190px] w-[322px] rounded-full bg-sandybrown opacity-40 blur-[300px]" />
 
-      <section className="py-16">
+      {/* Introduction Section */}
+      <section className="pt-12 pb-16">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-2">
-            {/* Contact Form */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-zinc-900 dark:text-white">
-                Send Us a Message
-              </h2>
-              <ContactForm />
+          <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-14">
+            {/* Image placeholder */}
+            <div className="w-full flex-shrink-0 lg:w-[620px]">
+              <div className="flex h-[300px] items-center justify-center rounded-[25px] bg-gradient-to-br from-amber-100 to-orange/20 sm:h-[360px] lg:h-[413px]">
+                <div className="text-center text-gray-400">
+                  <svg
+                    className="mx-auto mb-2 h-16 w-16 text-orange/40"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <p className="text-sm text-gray-400">Hình ảnh trung tâm</p>
+                </div>
+              </div>
             </div>
 
-            {/* Contact Info */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-zinc-900 dark:text-white">
-                Get in Touch
-              </h2>
-              <div className="space-y-6">
-                <Card>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-zinc-900 dark:text-white">
-                        Address
-                      </h3>
-                      <p className="text-zinc-600 dark:text-zinc-400">
-                        123 Learning Lane
-                        <br />
-                        Education District
-                        <br />
-                        City, State 12345
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-zinc-900 dark:text-white">
-                        Phone
-                      </h3>
-                      <p className="text-zinc-600 dark:text-zinc-400">
-                        (555) 123-4567
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-zinc-900 dark:text-white">
-                        Email
-                      </h3>
-                      <p className="text-zinc-600 dark:text-zinc-400">
-                        hello@busybeeenglish.com
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-zinc-900 dark:text-white">
-                        Hours
-                      </h3>
-                      <p className="text-zinc-600 dark:text-zinc-400">
-                        Monday - Friday: 9:00 AM - 7:00 PM
-                        <br />
-                        Saturday: 9:00 AM - 5:00 PM
-                        <br />
-                        Sunday: Closed
-                      </p>
-                    </div>
-                  </div>
-                </Card>
+            {/* About text */}
+            <div className="flex flex-col items-start">
+              <h1 className="text-3xl font-bold leading-[130%] text-gray-100 sm:text-4xl lg:text-[48px]">
+                Giới thiệu
+              </h1>
+              <div className="mt-4 text-base leading-[150%] text-gray-100">
+                <span>Trung tâm ngoại ngữ </span>
+                <span className="font-semibold">
+                  Con Ong Chăm Chỉ (Busy Bee English)
+                </span>
+                <span>
+                  {' '}
+                  được Sở Giáo Dục và Đào Tạo thành phố Hồ Chí Minh cấp phép
+                  thành lập vào ngày 28/7/2025. Busy Bee English là cơ sở đào
+                  tạo ngoại ngữ hoạt động theo quy định của pháp luật, chuyên tổ
+                  chức các khóa tiếng Anh thiếu nhi và luyện thi IELTS. Trung
+                  tâm hướng đến việc giúp học viên xây dựng nền tảng tiếng Anh
+                  vững chắc ngay từ sớm, phù hợp với từng độ tuổi và khả năng
+                  tiếp thu.
+                </span>
+                <br />
+                <br />
+                <span>
+                  Với quy mô lớp học phù hợp, Busy Bee English chú trọng việc
+                  theo sát từng học viên trong quá trình học tập, tạo môi trường
+                  học tập thân thiện, an toàn và phối hợp cùng phụ huynh để hỗ
+                  trợ kết quả học tập một cách hiệu quả.
+                </span>
               </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="bg-zinc-50 py-16 dark:bg-zinc-900">
+      {/* Contact Form Section */}
+      <section className="pb-16">
         <Container>
-          <h2 className="mb-8 text-center text-2xl font-bold text-zinc-900 dark:text-white">
-            Find Us
-          </h2>
-          <div className="flex h-64 items-center justify-center rounded-2xl border-2 border-dashed border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800">
-            <div className="text-center text-zinc-500 dark:text-zinc-400">
-              <svg
-                className="mx-auto mb-2 h-12 w-12"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                />
-              </svg>
-              <p>Interactive Map Coming Soon</p>
+          <div className="overflow-hidden rounded-[20px] bg-gold px-6 py-10 sm:px-10 md:px-[70px] md:py-12">
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[100px]">
+              {/* Form */}
+              <div className="w-full flex-shrink-0 lg:max-w-[473px]">
+                <ContactForm />
+              </div>
+
+              {/* Contact Info + Map */}
+              <div className="flex flex-1 flex-col gap-5">
+                {/* Logo + Contact details */}
+                <div>
+                  <Image
+                    src={logoWhite}
+                    alt="Busy Bee English"
+                    width={430}
+                    height={193}
+                    className="w-[280px] object-contain sm:w-[350px] lg:w-[430px]"
+                  />
+                  <div className="text-base leading-[150%] text-gray-100">
+                    <p>
+                      <span className="font-semibold">Địa chỉ:</span> ABC
+                      Street, Thành phố Hồ Chí Minh
+                    </p>
+                    <p>
+                      <span className="font-semibold">Hotline:</span> 091 xxx
+                      xxx
+                    </p>
+                    <p>
+                      <span className="font-semibold">Email:</span>{' '}
+                      busybee@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                {/* Map placeholder */}
+                <div className="flex h-[193px] items-center justify-center overflow-hidden rounded-[15px] bg-white/30">
+                  <div className="text-center text-gray-400">
+                    <svg
+                      className="mx-auto mb-2 h-12 w-12"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                      />
+                    </svg>
+                    <p className="text-sm">Bản đồ</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
       </section>
-
-      <CTA
-        title="Book a Free Trial Lesson"
-        description="Experience our teaching style firsthand. Schedule a complimentary trial class for your child today!"
-        action={{ label: 'Schedule Trial', href: '/contact' }}
-      />
     </div>
   );
 }

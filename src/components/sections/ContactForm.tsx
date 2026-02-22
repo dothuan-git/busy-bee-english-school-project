@@ -1,13 +1,11 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import Button from '@/components/ui/Button';
 
 interface FormData {
   name: string;
   email: string;
   phone: string;
-  childAge: string;
   message: string;
 }
 
@@ -22,7 +20,6 @@ export default function ContactForm() {
     name: '',
     email: '',
     phone: '',
-    childAge: '',
     message: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
@@ -32,17 +29,17 @@ export default function ContactForm() {
     const newErrors: FormErrors = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = 'Vui lòng nhập tên';
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = 'Vui lòng nhập email';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email';
+      newErrors.email = 'Email không hợp lệ';
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = 'Vui lòng nhập tin nhắn';
     }
 
     setErrors(newErrors);
@@ -58,7 +55,7 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div className="rounded-2xl border border-green-200 bg-green-50 p-8 text-center dark:border-green-800 dark:bg-green-900/20">
+      <div className="rounded-2xl border border-green-200 bg-green-50 p-8 text-center">
         <svg
           className="mx-auto h-12 w-12 text-green-500"
           fill="none"
@@ -72,130 +69,78 @@ export default function ContactForm() {
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <h3 className="mt-4 text-xl font-semibold text-green-800 dark:text-green-200">
-          Thank you for your message!
+        <h3 className="mt-4 text-xl font-semibold text-green-800">
+          Cảm ơn bạn đã gửi tin nhắn!
         </h3>
-        <p className="mt-2 text-green-700 dark:text-green-300">
-          We&apos;ll get back to you within 24 hours.
+        <p className="mt-2 text-green-700">
+          Chúng tôi sẽ phản hồi trong vòng 24 giờ.
         </p>
       </div>
     );
   }
 
+  const inputClasses =
+    'w-full h-[60px] rounded-[10px] bg-white/30 px-6 text-base leading-[30px] text-black/70 placeholder-black/50 outline-none transition-colors focus:bg-white/50 focus:ring-2 focus:ring-orange-400';
+  const errorInputClasses = 'ring-2 ring-red-500';
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-[17px]">
       <div>
-        <label
-          htmlFor="name"
-          className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
-        >
-          Your Name *
-        </label>
         <input
           type="text"
-          id="name"
+          placeholder="Tên"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className={`w-full rounded-lg border px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 dark:bg-zinc-800 ${
-            errors.name
-              ? 'border-red-500 dark:border-red-500'
-              : 'border-zinc-300 dark:border-zinc-700'
-          }`}
+          className={`${inputClasses} ${errors.name ? errorInputClasses : ''}`}
         />
         {errors.name && (
-          <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+          <p className="mt-1 text-sm text-red-700">{errors.name}</p>
         )}
       </div>
 
       <div>
-        <label
-          htmlFor="email"
-          className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
-        >
-          Email Address *
-        </label>
         <input
           type="email"
-          id="email"
+          placeholder="Email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className={`w-full rounded-lg border px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 dark:bg-zinc-800 ${
-            errors.email
-              ? 'border-red-500 dark:border-red-500'
-              : 'border-zinc-300 dark:border-zinc-700'
-          }`}
+          className={`${inputClasses} ${errors.email ? errorInputClasses : ''}`}
         />
         {errors.email && (
-          <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+          <p className="mt-1 text-sm text-red-700">{errors.email}</p>
         )}
       </div>
 
       <div>
-        <label
-          htmlFor="phone"
-          className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
-        >
-          Phone Number
-        </label>
         <input
           type="tel"
-          id="phone"
+          placeholder="Số điện thoại"
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-          className="w-full rounded-lg border border-zinc-300 px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 dark:border-zinc-700 dark:bg-zinc-800"
+          className={inputClasses}
         />
       </div>
 
       <div>
-        <label
-          htmlFor="childAge"
-          className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
-        >
-          Child&apos;s Age
-        </label>
-        <select
-          id="childAge"
-          value={formData.childAge}
-          onChange={(e) =>
-            setFormData({ ...formData, childAge: e.target.value })
-          }
-          className="w-full rounded-lg border border-zinc-300 px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 dark:border-zinc-700 dark:bg-zinc-800"
-        >
-          <option value="">Select age range</option>
-          <option value="3-5">3-5 years (Little Bees)</option>
-          <option value="6-9">6-9 years (Busy Bees)</option>
-          <option value="10-12">10-12 years (Super Bees)</option>
-        </select>
-      </div>
-
-      <div>
-        <label
-          htmlFor="message"
-          className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300"
-        >
-          Message *
-        </label>
         <textarea
-          id="message"
-          rows={4}
+          placeholder="Tin nhắn"
           value={formData.message}
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
-          className={`w-full rounded-lg border px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 dark:bg-zinc-800 ${
-            errors.message
-              ? 'border-red-500 dark:border-red-500'
-              : 'border-zinc-300 dark:border-zinc-700'
-          }`}
+          className={`w-full h-[129px] rounded-[10px] bg-white/30 px-6 pt-4 text-base leading-[30px] text-black/70 placeholder-black/50 outline-none transition-colors resize-none focus:bg-white/50 focus:ring-2 focus:ring-orange-400 ${errors.message ? errorInputClasses : ''}`}
         />
         {errors.message && (
-          <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+          <p className="mt-1 text-sm text-red-700">{errors.message}</p>
         )}
       </div>
 
-      <Button type="submit" size="lg" className="w-full">
-        Send Message
-      </Button>
+      <button
+        type="submit"
+        className="w-full h-[60px] rounded-[10px] bg-orange text-center font-inter font-medium text-white transition-colors hover:bg-[#e69200]"
+      >
+        Gửi
+      </button>
     </form>
   );
 }

@@ -12,8 +12,8 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="benefits" className="bg-white py-[73px]">
-      <div className="mx-auto max-w-[1440px] px-[107px]">
+    <section id="benefits" className="bg-white py-20">
+      <div className="mx-auto max-w-[calc(1288px+48px)] px-6">
         <div className="flex flex-col items-center gap-10 lg:flex-row">
           {/* Left - Image */}
           <FadeIn direction="left">

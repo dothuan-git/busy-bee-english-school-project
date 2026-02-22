@@ -26,7 +26,7 @@ export default function RecruitmentPage() {
   return (
     <div id="recruitment" className="bg-whitesmoke">
       {/* Hero */}
-      <section id="recruitment-hero" className="relative overflow-hidden py-24">
+      <section id="recruitment-hero" className="relative overflow-hidden py-20">
         <Image
           src={banner}
           alt=""
@@ -34,19 +34,17 @@ export default function RecruitmentPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative mx-auto max-w-[1440px] px-[70px] text-left text-white">
+        <div className="relative mx-auto max-w-[calc(1288px+48px)] px-6 text-left">
           <FadeIn>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-orange">
               Busy Bee English
             </p>
-            <h1 className="text-[48px] font-extrabold leading-[120%]">
+            <h1 className="text-[48px] font-extrabold leading-[120%] text-gray-100">
               Gia nhập đội ngũ
               <br />
               <span className="text-orange">Busy Bee</span>
             </h1>
-            <p className="mt-5 max-w-[560px] text-base leading-[170%] text-white/75">
+            <p className="mt-5 max-w-[560px] text-base leading-[170%] text-gray-100/70">
               Chúng tôi đang tìm kiếm những giáo viên tâm huyết, sáng tạo để
               cùng xây dựng môi trường học tiếng Anh tốt nhất cho trẻ em.
             </p>
@@ -54,7 +52,7 @@ export default function RecruitmentPage() {
           <FadeIn delay={200} direction="up">
             <a
               href="#positions"
-              className="mt-8 inline-flex h-[52px] items-center justify-center rounded-full bg-orange px-8 text-base font-semibold text-gray-200 transition-all duration-300 hover:-translate-y-0.5 hover:bg-goldenrod hover:shadow-[0px_8px_30px_rgba(255,221,40,0.3)] active:scale-95"
+              className="mt-8 inline-flex h-[52px] items-center justify-center rounded-full bg-orange px-8 text-base font-semibold text-gray-100 transition-all duration-300 hover:-translate-y-0.5 hover:bg-goldenrod hover:shadow-[0px_8px_30px_rgba(255,221,40,0.3)] active:scale-95"
             >
               Xem vị trí tuyển dụng
             </a>
@@ -64,7 +62,7 @@ export default function RecruitmentPage() {
 
       {/* Open Positions */}
       <section id="positions" className="scroll-mt-28 bg-white py-20">
-        <div className="mx-auto max-w-[1280px] px-[70px]">
+        <div className="mx-auto max-w-[calc(1288px+48px)] px-6">
           <FadeIn>
             <h2 className="mb-3 text-center text-[36px] font-bold leading-[130%] text-gray-100">
               Vị trí đang tuyển

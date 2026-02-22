@@ -16,7 +16,7 @@ const contactLinks = [
 export default function Footer() {
   return (
     <footer className="bg-gray-200 text-white">
-      <div className="mx-auto max-w-[1280px] pb-8 pt-10">
+      <div className="mx-auto max-w-[calc(1288px+48px)] px-6 pb-10 pt-12">
         <div className="flex flex-col justify-between gap-10 sm:flex-row">
           {/* Brand */}
           <div>

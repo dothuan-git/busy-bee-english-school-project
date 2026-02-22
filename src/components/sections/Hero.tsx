@@ -7,8 +7,8 @@ import FadeIn from '@/components/ui/FadeIn';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden bg-whitesmoke pb-16 pt-8">
-      <div className="mx-auto max-w-[1440px] px-[70px]">
+    <section id="hero" className="relative overflow-hidden bg-whitesmoke pt-10 pb-16">
+      <div className="mx-auto max-w-[calc(1288px+48px)] px-6">
         <div className="relative flex flex-col items-center justify-between gap-12 lg:flex-row">
           {/* Left Content */}
           <div className="relative max-w-[614px]">

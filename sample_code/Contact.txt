@@ -1,0 +1,91 @@
+import type { NextPage } from 'next';
+import Image from "next/image";
+
+
+
+const Contact: NextPage = () => {
+  	return (
+    		<div className="w-full h-[1441px] relative bg-whitesmoke overflow-hidden text-left text-num-16 text-gray-100 font-nunito">
+      			<div className="absolute top-[201px] left-[740px] w-[620px] h-[319px] text-[48px]">
+        				<div className="absolute top-[0px] left-[0px] w-[620px] h-[319px] flex flex-col items-start">
+          					<div className="h-[263px] flex flex-col items-start gap-4">
+            						<b className="relative leading-[130%] shrink-0">Giới thiệu</b>
+            						<div className="w-[616px] h-[233px] relative text-num-16 leading-[150%] inline-block shrink-0">
+              							<span>{`Trung tâm ngoại ngữ `}</span>
+              							<span className="font-semibold">Con Ong Chăm Chỉ (Busy Bee English)</span>
+              							<span> được Sở Giáo Dục và Đào Tạo thành phố Hồ Chí Minh cấp phép thành lập vào ngày 28/7/2025. Busy Bee English là cơ sở đào tạo ngoại ngữ hoạt động theo quy định của pháp luật, chuyên tổ chức các khóa tiếng Anh thiếu nhi và luyện thi IELTS. Trung tâm hướng đến việc giúp học viên xây dựng nền tảng tiếng Anh vững chắc ngay từ sớm, phù hợp với từng độ tuổi và khả năng tiếp thu.<br/>Với quy mô lớp học phù hợp, Busy Bee English chú trọng việc theo sát từng học viên trong quá trình học tập, tạo môi trường học tập thân thiện, an toàn và phối hợp cùng phụ huynh để hỗ trợ kết quả học tập một cách hiệu quả.</span>
+                								</div>
+                								</div>
+                								</div>
+                								</div>
+                								<div className="absolute top-[182px] left-[530px] [filter:blur(300px)] rounded-[50%] bg-sandybrown w-[321.9px] h-[189.3px] opacity-[0.4]" />
+                								<div className="absolute top-[0px] left-[0px] bg-white w-[1440px] h-[110px] overflow-hidden text-[20px] text-midnightblue">
+                  									<div className="absolute top-[calc(50%_-_28px)] left-[calc(50%_-_644px)] w-[1288px] h-14">
+                    										<div className="absolute h-[48.21%] w-[48.76%] top-[26.79%] right-[0%] bottom-[25%] left-[51.24%] flex items-start gap-14 shrink-0">
+                      											<div className="relative font-medium">Trang chủ</div>
+                      											<div className="flex items-center gap-2">
+                        												<div className="relative font-medium">Chương trình học</div>
+                        												<Image className="h-6 w-6 relative" width={24} height={24} sizes="100vw" alt="" />
+                      											</div>
+                      											<div className="relative font-medium text-gray-100">Tuyển dụng</div>
+                      											<div className="relative font-medium text-orange-100">Liên hệ</div>
+                    										</div>
+                    										<Image className="absolute w-[22.05%] top-[-18px] right-[77.64%] left-[0.31%] max-w-full overflow-hidden h-[93px] object-cover shrink-0" width={284} height={93} sizes="100vw" alt="" />
+                  									</div>
+                								</div>
+                								<div className="absolute top-[622px] left-[80px] rounded-[20px] bg-gold w-[1280px] h-[490px]" />
+                								<div className="absolute top-[648px] left-[150px] w-num-473 h-[439px] text-gray-200">
+                  									<div className="absolute top-[77px] left-[0px] w-num-473 h-num-60">
+                    										<div className="absolute top-[0px] left-[0px] rounded-num-10 bg-gray-300 w-num-473 h-num-60" />
+                    										<i className="absolute top-[15px] left-[25.78px] leading-[30px] inline-block font-medium w-[52.8px]">Email</i>
+                  									</div>
+                  									<div className="absolute top-[379px] left-[0px] w-num-473 h-num-60 text-center text-white font-inter">
+                    										<div className="absolute top-[0px] left-[0px] rounded-num-10 bg-orange-200 w-num-473 h-num-60" />
+                    										<div className="absolute top-[15px] left-[calc(50%_-_66.38px)] font-medium inline-block w-[136.6px]">Gửi</div>
+                  									</div>
+                  									<div className="absolute top-[0px] left-[0px] rounded-num-10 bg-gray-300 w-num-473 h-num-60" />
+                  									<i className="absolute top-[15px] left-[26px] leading-[30px] font-medium">Tên</i>
+                  									<div className="absolute top-[154px] left-[0px] w-num-473 h-num-60">
+                    										<div className="absolute top-[0px] left-[0px] rounded-num-10 bg-gray-300 w-num-473 h-num-60" />
+                    										<i className="absolute top-[15px] left-[25.78px] leading-[30px] inline-block font-medium w-[122.4px]">{`Số điện thoại `}</i>
+                  									</div>
+                  									<div className="absolute top-[231px] left-[0px] w-num-473 h-[129px]">
+                    										<div className="absolute top-[0px] left-[0px] rounded-num-10 bg-gray-300 w-num-473 h-[129px]" />
+                    										<i className="absolute top-[10.57px] left-[25.78px] leading-[30px] inline-block font-medium w-[82.5px] h-[21.1px]">Tin nhắn</i>
+                  									</div>
+                								</div>
+                								<div className="absolute top-[880px] left-[850px] w-[420px] h-[78px] flex flex-col items-start">
+                  									<div className="self-stretch h-[97px] relative leading-[150%] inline-block shrink-0">Address: ABC Street, Thành phố Hồ Chí Minh<br/>Hotline: 091 xxx xxx<br/>Email: busybee@gmail,com</div>
+                								</div>
+                								<div className="absolute bottom-[0px] left-[2px] bg-white w-[1438px] overflow-hidden flex flex-col items-start pt-[84px] px-20 pb-20 box-border">
+                  									<div className="w-[1278px] h-[151px] relative">
+                    										<div className="absolute top-[8px] left-[842.43px] w-[151.7px] h-[143px]">
+                      											<div className="absolute top-[119px] left-[0px] leading-[150%] inline-block w-[112.7px]">Luyện thi IELTS</div>
+                      											<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[151.7px]">Thiếu nhi (6-10 tuổi)</div>
+                      											<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[141.4px]">Thiếu nhi (4-6 tuổi)</div>
+                      											<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[100.4px]">Courses</div>
+                    										</div>
+                    										<div className="absolute top-[8px] left-[1182.69px] w-[95.3px] h-[107px]">
+                      											<div className="absolute top-[83px] left-[0px] leading-[150%] inline-block w-[53.3px]">Liên hệ</div>
+                      											<div className="absolute top-[47px] left-[0px] leading-[150%] inline-block w-[87.1px]">Tuyển dụng</div>
+                      											<div className="absolute top-[0px] left-[0px] text-[24px] leading-[150%] font-semibold font-inter inline-block w-[95.3px]">Contact</div>
+                    										</div>
+                    										<div className="absolute top-[0px] left-[0px] w-[267.5px] h-[151px]">
+                      											<div className="absolute top-[103px] left-[0px] leading-[150%] inline-block w-[267.5px]">Busy Bee is a registered<br/>trademark of busybee.english</div>
+                        												<div className="absolute top-[69px] left-[0px] leading-[150%] inline-block w-[199.8px]">©2026 busybee.english</div>
+                        												<div className="absolute h-[14.57%] w-[35.63%] top-[0%] right-[64.37%] bottom-[85.43%] left-[0%]">
+                          													<Image className="absolute h-full w-[23.61%] top-[0%] right-[76.39%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full" width={22.5} height={22} sizes="100vw" alt="" />
+                          													<Image className="absolute h-[84.55%] w-[23.61%] top-[9.09%] right-[0.04%] bottom-[6.36%] left-[76.35%] max-w-full overflow-hidden max-h-full" width={22.5} height={18.6} sizes="100vw" alt="" />
+                          													<Image className="absolute h-4/5 w-[23.61%] top-[9.09%] right-[39.83%] bottom-[10.91%] left-[36.56%] max-w-full overflow-hidden max-h-full" width={22.5} height={17.6} sizes="100vw" alt="" />
+                        												</div>
+                        												<div className="absolute top-[18px] left-[0px] w-[44.9px] h-[43.8px] flex items-center" />
+                      											</div>
+                    										</div>
+                  									</div>
+                  									<Image className="absolute top-[154px] left-[82px] rounded-[25px] w-[620px] h-[413px] object-cover" width={620} height={413} sizes="100vw" alt="" />
+                  									<Image className="absolute top-[702px] left-[825px] w-[430px] h-[193px] object-cover" width={430} height={193} sizes="100vw" alt="" />
+                								</div>);
+                								};
+                								
+                								export default Contact ;
+                								
