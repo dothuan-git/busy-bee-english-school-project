@@ -95,9 +95,9 @@ export default function ContactPage() {
                     alt="Busy Bee English"
                     width={430}
                     height={193}
-                    className="w-[280px] object-contain sm:w-[350px] lg:w-[430px]"
+                    className="w-[220px] object-contain sm:w-[280px] lg:w-[340px]"
                   />
-                  <div className="text-base leading-[150%] text-gray-100">
+                  <div className="mt-3 flex flex-col gap-1.5 text-base leading-[150%] text-gray-100">
                     <p>
                       <span className="font-semibold">Địa chỉ:</span> ABC
                       Street, Thành phố Hồ Chí Minh

@@ -137,7 +137,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full h-[60px] rounded-[10px] bg-orange text-center font-inter font-medium text-white transition-colors hover:bg-[#e69200]"
+        className="w-full h-[60px] rounded-[10px] bg-orange text-center font-inter font-medium text-midnightblue transition-colors hover:bg-[#e69200]"
       >
         Gửi
       </button>

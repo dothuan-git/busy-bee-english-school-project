@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="relative flex flex-col gap-14">
               <FadeIn direction="left">
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-[36px] leading-[130%] text-gray-100">
+                  <h1 className="text-[36px] leading-[130%] text-gray-100 sm:text-[44px] lg:text-[52px]">
                     <span className="font-semibold">
                       Kết nối tri thức
                     </span>
