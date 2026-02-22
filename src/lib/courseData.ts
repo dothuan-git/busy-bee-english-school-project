@@ -18,7 +18,7 @@ export const courseData: CourseDetail[] = [
     slug: '4-6',
     cardTitle: 'Tiếng anh thiếu nhi\n(4-6 tuổi)',
     cardDescription:
-      'Giáo trình PIPPA AND POP 1,2,3\nPhương pháp học thông qua hoạt động nghe - nói, trò chơi và vận động phù hợp lứa tuổi.',
+      'Giáo trình PIPPA AND POP 1,2,3.',
     price: '900.000VNĐ/tháng',
     detailTitle: 'Tiếng anh thiếu nhi (4-6 tuổi):',
     schedule: [
@@ -46,7 +46,7 @@ export const courseData: CourseDetail[] = [
     slug: '6-10',
     cardTitle: 'Tiếng anh thiếu nhi (6-10 tuổi)',
     cardDescription:
-      'Giáo trình FAMILY AND FRIENDS 2nd EDITION\nPhương pháp học chú trọng học qua thực hành, tương tác và hướng dẫn từng bước.',
+      'Giáo trình FAMILY AND FRIENDS 2nd EDITION.',
     price: '900.000VNĐ/tháng',
     detailTitle: 'Tiếng anh thiếu nhi (6-10 tuổi):',
     schedule: [
@@ -75,7 +75,7 @@ export const courseData: CourseDetail[] = [
     slug: 'ielts',
     cardTitle: 'Luyện thi chứng chỉ IELTS',
     cardDescription:
-      'Giáo trình MINDSET FOR IELTS (FOUNDATION - 3)\nPhương pháp học tập trung xây dựng nền tảng kỹ năng vững chắc.',
+      'Giáo trình MINDSET FOR IELTS (FOUNDATION - 3).',
     price: '1.500.000VNĐ/tháng',
     detailTitle: 'Luyện thi chứng chỉ IELTS:',
     schedule: [
