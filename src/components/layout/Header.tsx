@@ -28,22 +28,22 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className="relative z-50 h-[110px] w-full bg-white font-sans text-xl text-midnightblue">
-      <div className="absolute left-1/2 top-1/2 h-14 w-[1288px] max-w-[calc(100%-48px)] -translate-x-1/2 -translate-y-1/2">
+    <header id="header" className="relative z-50 w-full bg-white font-sans text-xl text-midnightblue">
+      <div className="mx-auto flex w-[1288px] max-w-[calc(100%-48px)] items-center justify-between py-2">
         {/* Logo */}
-        <Link href="/" className="absolute left-[0.31%] top-[-18px] transition-opacity duration-300 hover:opacity-80">
+        <Link href="/" className="transition-opacity duration-300 hover:opacity-80">
           <Image
-            className="h-[93px] w-auto overflow-hidden object-cover"
+            className="h-[70px] w-auto overflow-hidden object-cover"
             src={logo}
-            width={284}
-            height={93}
+            width={214}
+            height={70}
             alt="Busy Bee English School"
             priority
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="absolute right-0 top-[26.79%] hidden items-start gap-14 lg:flex">
+        <nav className="hidden items-center gap-14 lg:flex">
           <Link
             href="/"
             className="relative font-medium after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-orange after:transition-all after:duration-300 hover:text-orange hover:after:w-full"
@@ -105,7 +105,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="absolute right-0 top-1/2 block -translate-y-1/2 cursor-pointer border-none bg-none p-2 transition-transform duration-200 active:scale-90 lg:hidden"
+          className="block cursor-pointer border-none bg-none p-2 transition-transform duration-200 active:scale-90 lg:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -132,7 +132,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute left-0 top-[110px] z-50 flex w-full flex-col border-t border-[#eee] bg-white px-6 transition-all duration-300 lg:hidden ${
+        className={`absolute left-0 top-full z-50 flex w-full flex-col border-t border-[#eee] bg-white px-6 transition-all duration-300 lg:hidden ${
           isMobileMenuOpen
             ? 'translate-y-0 py-4 opacity-100'
             : 'pointer-events-none -translate-y-2 py-0 opacity-0'
