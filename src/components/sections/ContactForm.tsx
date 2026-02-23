@@ -23,7 +23,9 @@ export default function ContactForm() {
     message: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -46,10 +48,33 @@ export default function ContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (validate()) {
+    if (!validate()) return;
+
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Gửi thất bại');
+      }
+
       setIsSubmitted(true);
+    } catch (err) {
+      setSubmitError(
+        err instanceof Error ? err.message : 'Đã xảy ra lỗi. Vui lòng thử lại.',
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -135,11 +160,16 @@ export default function ContactForm() {
         )}
       </div>
 
+      {submitError && (
+        <p className="text-sm text-red-700">{submitError}</p>
+      )}
+
       <button
         type="submit"
-        className="w-full h-[60px] rounded-[10px] bg-orange text-center font-inter font-medium text-midnightblue transition-colors hover:bg-[#e69200]"
+        disabled={isSubmitting}
+        className="w-full h-[60px] rounded-[10px] bg-orange text-center font-inter font-medium text-midnightblue transition-colors hover:bg-[#e69200] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Gửi
+        {isSubmitting ? 'Đang gửi...' : 'Gửi'}
       </button>
     </form>
   );
