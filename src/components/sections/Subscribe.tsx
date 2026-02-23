@@ -15,10 +15,52 @@ const avatars = [
 
 export default function Subscribe() {
   const [phone, setPhone] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Phone submitted:', phone);
+
+    if (!phone.trim()) {
+      setStatus('error');
+      setErrorMsg('Vui lòng nhập số điện thoại.');
+      return;
+    }
+
+    if (!/^[0-9]{9,11}$/.test(phone.trim())) {
+      setStatus('error');
+      setErrorMsg('Số điện thoại không hợp lệ. Vui lòng chỉ nhập 9-11 chữ số.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setStatus('idle');
+    setErrorMsg('');
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phone }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Gửi thất bại');
+      }
+
+      setStatus('success');
+      setPhone('');
+    } catch (err) {
+      setStatus('error');
+      setErrorMsg(
+        err instanceof Error ? err.message : 'Đã xảy ra lỗi. Vui lòng thử lại.',
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -62,17 +104,28 @@ export default function Subscribe() {
                 <input
                   type="tel"
                   value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
+                  onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
                   placeholder="Số điện thoại của bạn"
                   className="h-full flex-1 rounded-l-[10px] bg-white/10 px-5 text-base text-white placeholder:text-white/50 focus:bg-white/15 focus:outline-none"
                 />
                 <button
                   type="submit"
-                  className="h-full w-[142px] cursor-pointer rounded-r-[10px] border-none bg-goldenrod font-medium text-white transition-all duration-300 hover:bg-orange hover:shadow-[0_4px_20px_rgba(241,179,0,0.4)] active:scale-95"
+                  disabled={isSubmitting}
+                  className="h-full w-[142px] cursor-pointer rounded-r-[10px] border-none bg-goldenrod font-medium text-white transition-all duration-300 hover:bg-orange hover:shadow-[0_4px_20px_rgba(241,179,0,0.4)] active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Đăng ký
+                  {isSubmitting ? 'Đang gửi...' : 'Đăng ký'}
                 </button>
               </form>
+
+              {/* Status messages */}
+              {status === 'success' && (
+                <p className="text-sm text-green-300">
+                  Đăng ký thành công! Chúng tôi sẽ liên hệ bạn sớm nhất.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-sm text-red-300">{errorMsg}</p>
+              )}
             </div>
           </div>
         </FadeIn>
