@@ -102,24 +102,18 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="flex h-[193px] items-center justify-center overflow-hidden rounded-[15px] bg-white/30">
-                  <div className="text-center text-gray-400">
-                    <svg
-                      className="mx-auto mb-2 h-12 w-12"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                      />
-                    </svg>
-                    <p className="text-sm">Bản đồ</p>
-                  </div>
+                {/* Map */}
+                <div className="h-[193px] overflow-hidden rounded-[15px]">
+                  <iframe
+                    src="https://maps.google.com/maps?q=10.835222,106.615861&z=18&output=embed&hl=vi"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Busy Bee English - Bản đồ"
+                  />
                 </div>
               </div>
             </div>
