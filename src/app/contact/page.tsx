@@ -87,16 +87,17 @@ export default function ContactPage() {
                   />
                   <div className="mt-3 flex flex-col gap-1.5 text-base leading-[150%] text-gray-100">
                     <p>
-                      <span className="font-semibold">Địa chỉ:</span> ABC
-                      Street, Thành phố Hồ Chí Minh
+                      <span className="font-semibold">Địa chỉ:</span> 42/4A
+                      đường TTN1, khu phố 34, p. Đông Hưng Thuận, TP Hồ
+                      Chí Minh
                     </p>
                     <p>
-                      <span className="font-semibold">Hotline:</span> 091 xxx
-                      xxx
+                      <span className="font-semibold">Số điện thoại:</span>{' '}
+                      0936036440
                     </p>
                     <p>
                       <span className="font-semibold">Email:</span>{' '}
-                      busybee@gmail.com
+                      uyenthido1312@gmail.com
                     </p>
                   </div>
                 </div>

@@ -34,7 +34,7 @@ cp .env.example .env.local
 
 ```bash
 # Start development server
-pnpm dev
+G
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
